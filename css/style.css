@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:700|Oswald:300,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+#button:active {
+    background-color: #555;
+  }
+#button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+/* div#Welcome {
+    background: url("/Users/lena/Desktop/FEWDR-729/Final_Project/Milestone 2 - Week 7/Images/IMG_0641.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.parallax {
+    min-height: 100%;
+    background: transparent;
+}
+
+.welcome-text{
+    z-index: 2;
+    position: relative;
+}
+
+.parallax p{
+    font-size: 72px;
+    font-family: 'Kalam', cursive;
+    color: white;
+    text-align: center;
+    padding-top: 500px;
+}
+
+/* div#Welcome p {
+    font-size: 72px;
+    font-family: 'Kalam', cursive;
+    color: white;
+    text-align: center;
+    padding-top: 500px;
+} */
+
+div#First-Date {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(255, 247, 247);
+}
+
+div.smaller-column{
+    width: 600px;
+}
+
+div.smaller-column h3{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+div.smaller-column p{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+
+div.bigger-column{
+    width: 800px;
+}
+
+/* div.bigger-column img{
+    border: 35px;
+    border-color: rgb(255, 255, 238);
+} */
+
+
+.container-1 {
+    display: flex;
+    background: rgb(240, 240, 240);
+    height: 1000px;
+}
+
+#photo-column{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#slideshow { 
+    margin:0 auto; 
+    position: relative; 
+    /* width: 100%;  */
+    /* height: 240px;  */
+    /* padding: 10px;  */
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+}
+
+.slides{
+    width: 100%;
+    /* padding-top: 40px; */
+    padding-right: 250px;
+    margin:0 auto;
+}
+
+.text-column{
+    padding-top: 250px;
+    padding-right: 300px;
+}
+
+.text-column h3{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text-column p {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.container-2{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Wedding{
+    display: flex;
+    width: 100%;
+    /* background-color: rgb(202, 202, 202); */
+    padding-left: 300px;
+    margin: 0;
+}
+
+.Wedding p{
+    width: 1000px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+    text-align: center;
+    padding-top: 200px;
+}
+
+#video{
+    /* background: url("/Users/lena/Desktop/FEWDR-729/Final_Project/Milestone 2 - Week 7/Images/_DSC9145.jpg"); */
+    width: 1000px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+#video iframe{
+    width: 1000px;
+    height: 600px;
+}
+
+/* #video i {
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    margin-top: 440px;
+    margin-left: 800px;
+} */
+
+#wedding-photo img{
+    display: block;
+    width: 1000px; 
+    margin: 0;
+}
+
+.Wedding h5{
+    width: 1000px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: rgb(66, 66, 66);
+    font-weight: 300;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(240, 240, 240);
+    height: 800px;
+    padding-top: 50px;
+}
+
+.container-3 h6{
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    padding-right: 50px;
+}
+
+.container-3 p{
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    padding-right: 50px;
+}
+
+.container-3 img{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+/* overwriting CSS for new layout goes here */
+@media only screen and (max-width: 1200px){
+    .parallax p{
+        font-size: 60px;
+        text-align: center;
+        padding-top: 500px;
+    }
+
+    div#First-Date {
+        padding-left: 100px;
+    }
+    
+    div.smaller-column{
+        width: 400px;
+    }
+    
+    div.smaller-column h3{
+        font-size: 30px;
+    }
+    
+    div.smaller-column p{
+        font-size: 24px;
+    }
+    
+    div.bigger-column{
+        width: 400px;
+    }
+
+    .container-1 {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    #photo-column{
+        width: 100%;
+        /* margin-left: auto;
+        margin-right: auto; */
+        padding-left: 250px;
+        padding-top: 50px;
+    }
+    
+    .slides{
+        width: 100%;
+    }
+    
+    .text-column{
+        padding-top: 450px;
+        padding-left: 350px;
+    }
+
+    .text-column h3{
+        font-size: 30px;
+    }
+    
+    .text-column p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .text-column img {
+        width: 60%;
+        padding-left: 200px;
+    }
+
+    .container-2{
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .Wedding{
+        display: flex;
+        width: 100%;
+        /* background-color: rgb(202, 202, 202); */
+        padding-left: 50px;
+    }
+    
+    .Wedding p{
+        width: 500px;
+        font-size: 30px;
+        padding-top: 100px;
+    }
+    
+    #video{
+        width: 600px;
+        height: 300px;
+    }
+    
+    #video iframe{
+        width: 500px;
+        height: 300px;
+    }
+    
+    #wedding-photo img{
+        width: 500px; 
+        height: 300px;
+    }
+    
+    .Wedding h5{
+        width: 500px;
+        font-size: 28px;
+        padding-top: 100px;
+    }
+}
